@@ -29,6 +29,23 @@ public class Note01 {
  			// 60 미만인 수들
  		}
 		
+		Boolean A = null;
+		Boolean B = null;
+		
+		if ( A && B ) {
+			
+		}
+		
+		if ( A ) {		
+ 			if ( B ) {
+ 				// A && B
+ 			} else {
+ 				// A && ~B 				
+ 			}
+ 		} else {
+ 			// ~A 			
+ 		}
+		
 	}
 
 }
