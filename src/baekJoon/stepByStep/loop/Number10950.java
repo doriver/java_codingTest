@@ -66,21 +66,21 @@ public class Number10950 {
  * 3. StringBuilder 에 계산한 식을 넣어준 뒤 나중에 한 번에 출력해주는 방식
  * */
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
- 		String str = br.readLine();
  		
- 		int T = Integer.parseInt(str);
+ 		int T = Integer.parseInt(br.readLine()); // 입력한거를 String으로 받아서, int로 전환 
  		
  		StringTokenizer st = null;
  		StringBuilder sb = new StringBuilder();
  		
  		for (int i = 1; i <= T; i++) {
- 			st = new StringTokenizer(br.readLine()," ");
+ 			st = new StringTokenizer(br.readLine()," "); // String으로 받아서, " "를 기준으로 잘라서 저장
+ 			// 잘라서 저장한String들을 int로 바꾼후 더해서 , sb에 담는다
  			sb.append( Integer.parseInt(st.nextToken()) + Integer.parseInt(st.nextToken()) );
  			sb.append('\n'); // 오버로드? 로 다양한 파라미터 받음
  		}
+ 		br.close();		
  		
  		System.out.println(sb);
- 		br.close();		
 		
 /*
  * 4. 다른 풀이, nextInt()라는 펑션 있나봐
