@@ -1,4 +1,4 @@
-package baekJoon.stepByStep.array.timeComplexity;
+package baekJoon.stepByStep.timeComplexity;
 
 public class Note01 {
 
