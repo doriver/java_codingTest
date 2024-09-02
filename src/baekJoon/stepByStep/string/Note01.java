@@ -24,6 +24,20 @@ public class Note01 {
  * 문자열.length()		
  */
 		System.out.println(a.length()); // 8
-		System.out.println(b.length()); // 3
+		System.out.println(b.length()); // 3	
+/*
+ * 	아스키 코드
+ * 	char <-> int , 여기서 int가 아스키 코드값이 됨
+ */
+		char q = 'A';
+		char y = 'B';
+		System.out.println(q+y); // 131 나옴 , AB출력 안됨
+		
+		int i = (int)q;
+		System.out.println(i); // 65
+		System.out.println((char)i); // A
+		
+		char e = '3';
+		System.out.println((int)e); // 51
 	}
 }
