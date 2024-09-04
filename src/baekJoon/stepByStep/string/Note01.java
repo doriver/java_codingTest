@@ -39,5 +39,39 @@ public class Note01 {
 		
 		char e = '3';
 		System.out.println((int)e); // 51
+		
+		System.out.println((int)'0'); // 48
+		
+/*
+ *  getBytes() : byte배열을 리턴함		
+ */
+		String str = "12345";
+		for (byte value : str.getBytes()) {
+			System.out.print(value); // 49 ~ 53
+		}
+		System.out.println();
+		for (byte value : "asdf".getBytes()) {
+			System.out.println(value); // 97 , 115 , 100 , 102
+		}
+/*
+ * indexOf() 메서드 
+ * 특정 문자열이 존재하면 해당 문자열의 첫 번째 인덱스가 반환되고 그렇지 않으면 -1이 반환
+ * String, char다 입력받아짐
+ */
+		System.out.println("abcde".indexOf("a")); // 0
+		System.out.println("abcde".indexOf("c")); // 2
+		System.out.println("abcde".indexOf('c')); // 2
+		
+		
+		for (char j = 'a'; j <= 'z'; j++) {
+			System.out.print("abcde".indexOf(j));
+		} // 01234-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1
+		System.out.println();
+		
+		for (char j = 'a'; j <= 'z'; j++) {
+			
+ 			System.out.print(j + " ");
+ 		} // a b c d e f g h i j k l m n o p q r s t u v w x y z 
+		System.out.println();
 	}
 }
