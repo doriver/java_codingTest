@@ -1,4 +1,4 @@
-package baekJoon.stepByStep.IoAndOperation.buffered;
+package baekJoon.stepByStep.Io.buffered;
 
 import java.io.BufferedWriter;
 import java.io.IOException;
