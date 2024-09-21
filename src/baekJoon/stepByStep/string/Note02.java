@@ -1,0 +1,32 @@
+package baekJoon.stepByStep.string;
+
+import java.util.StringTokenizer;
+
+public class Note02 {
+
+	public static void main(String[] args) {
+	
+//	StringBuilder
+		StringBuilder sb = new StringBuilder();
+		
+		for (int i = 1; i <= 4; i++) {
+			for (int j = 1; j <= i; j++) {
+				sb.append('*');
+			}
+			sb.append('\n');
+		}
+		
+		System.out.println(sb); // 만든 별 찍힘
+		
+//	StringTokenizer( "문자열" , 구분자 );
+		StringTokenizer st = new StringTokenizer("가 나다 라 바사"," "); 
+		System.out.println(st.nextToken()); // 가
+		System.out.println(st.nextToken()); // 나다
+		System.out.println(st.nextToken()); // 라
+		System.out.println(st.nextToken()); // 바사
+
+
+		
+	}
+
+}
