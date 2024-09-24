@@ -18,6 +18,11 @@ public class Note02 {
 		
 		System.out.println(sb); // 만든 별 찍힘
 		
+		
+		StringBuilder sb01 = new StringBuilder("789");
+		sb01.reverse();
+		System.out.println(Integer.parseInt(sb01.toString())); // 987
+		
 //	StringTokenizer( "문자열" , 구분자 );
 		StringTokenizer st = new StringTokenizer("가 나다 라 바사  "," "); 
 		System.out.println(st.countTokens()); // 4
